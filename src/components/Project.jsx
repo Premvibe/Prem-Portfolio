@@ -48,7 +48,7 @@ product grid, and footer.`,
     image: '/chat.png',
     links: [
       { label: 'Website', href: 'https://forever-ecom.netlify.app/' },
-      { label: 'Source', href: 'https://github.com/Premvibe/Forever-E-commerce' }
+      { label: 'Source', href: 'https://github.com/Premvibe/CHAT-APP' }
     ]
   },
   {
