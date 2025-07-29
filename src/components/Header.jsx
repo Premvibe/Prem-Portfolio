@@ -9,7 +9,7 @@ const Header = () => {
           Hi, I'm Prem Kumar <span className="inline-block">👋</span>
         </h1>
         <p className="text-lg text-gray-900 max-w-md leading-relaxed">
-  Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.
+  Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Instagram.
 </p>
 
       </div>
