@@ -1,4 +1,3 @@
-// Skills.jsx (optional component if you want to split)
 import React from 'react'
 
 const skills = [
@@ -20,7 +19,6 @@ const skills = [
   'MongoDB',
 ]
 
-
 const Skills = () => {
   return (
     <div className="mt-10 max-w-2xl mx-auto text-left">
@@ -29,7 +27,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="bg-black text-white px-4 py-1 rounded-md text-sm font-medium"
+            className="bg-black text-white px-4 py-1 rounded-md text-sm font-medium transition-all duration-300 hover:bg-white hover:text-black hover:border hover:border-black hover:scale-105"
           >
             {skill}
           </span>

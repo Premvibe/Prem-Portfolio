@@ -1,6 +1,7 @@
 import React from 'react'
 
 const projects = [
+ 
   {
     title: 'Food Delivery',
     duration: 'Jan 2025 – Feb 2025',
@@ -26,6 +27,39 @@ product grid, and footer.`,
     links: [
       { label: 'Website', href: 'https://nike-sooty-ten.vercel.app/' },
       { label: 'Source', href: 'https://github.com/Premvibe/Nike' }
+    ]
+  },
+  {
+    title: 'E-commerce Website',
+    duration: 'May 2025 – July 2025',
+    description: `Developed a dynamic product listing page. Integrated REST API for data fetching with basic filtering and category options. Implemented responsive design to ensure cross-device compatibility. Utilized React hooks and component-based architecture for modular development. Enabled users to browse products by categories with smooth navigation and intuitive UI. .`,
+    tech: ['React', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript'],
+    image: '/ecom.png',
+    links: [
+      { label: 'Website', href: 'https://forever-ecom.netlify.app/' },
+      { label: 'Source', href: 'https://github.com/Premvibe/Forever-E-commerce' }
+    ]
+  },
+  {
+    title: 'Quick Chat App',
+    duration: 'JUly 2025 – Aug 2025',
+    description: ` .`,
+    tech: ['React', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript'],
+    image: '/chat.png',
+    links: [
+      { label: 'Website', href: 'https://forever-ecom.netlify.app/' },
+      { label: 'Source', href: 'https://github.com/Premvibe/Forever-E-commerce' }
+    ]
+  },
+  {
+    title: 'Todo List',
+    duration: 'Oct 2024 – Nov 2024',
+    description: `Created a simple To-Do List application using React. Implemented core features such as adding, editing, and deleting tasks with real-time state updates using React hooks. Utilized component-based architecture for clean and reusable code. Ensured a user-friendly interface with responsive design and intuitive task management  `,
+    tech: ['React', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript'],
+    image: '/todo.png',
+    links: [
+      { label: 'Website', href: 'https://to-do-list-hazel-three-42.vercel.app/' },
+      { label: 'Source', href: 'https://github.com/Premvibe/To-Do-List' }
     ]
   }
 ]
