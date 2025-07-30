@@ -3,7 +3,7 @@ import React from 'react'
 const projects = [
  
   {
-    title: 'Food Delivery',
+    title: 'Food ',
     duration: 'Jan 2025 – Feb 2025',
     description: `Developed a responsive and user-friendly food delivery interface that allows users to
 view menus, and manage their cart. Implemented dynamic routing and reusable React
