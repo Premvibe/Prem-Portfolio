@@ -42,7 +42,7 @@ product grid, and footer.`,
   },
   {
     title: 'Quick Chat App',
-    duration: 'JUly 2025 – Aug 2025',
+    duration: 'July 2025 – Aug 2025',
     description: `  Developed a real-time chat application using React and Socket.io. Implemented user authentication, private messaging, and group chats. Designed a responsive UI with modern components and real-time updates for seamless user experience. Utilized WebSocket for real-time communication and state management with React hooks.` ,
     tech: ['React', 'HTML', 'CSS', 'TailwindCSS', 'JavaScript'],
     image: '/chat.png',
