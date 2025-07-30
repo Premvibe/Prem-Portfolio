@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FaHome, FaGithub, FaLinkedin, FaYoutube, FaInstagram } from "react-icons/fa";
 import { LuSun, LuMoon } from "react-icons/lu";
 import { PiNotebookBold } from "react-icons/pi";
+import { useTheme } from "../context/ThemeContext"; // Import context
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    const storedTheme = localStorage.getItem("theme");
-    return storedTheme === "dark";
-  });
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
+  const { darkMode, toggleTheme } = useTheme(); // Use global theme
 
   const navItems = [
     { icon: <FaHome />, label: "Home", href: "#" },
@@ -79,7 +66,7 @@ const Navbar = () => {
         <div className="group relative flex items-center">
           <button
             title="Theme"
-            onClick={() => setDarkMode((prev) => !prev)}
+            onClick={toggleTheme}
             className={`${iconWrapper} ${themeIconClasses}`}
           >
             {darkMode ? <LuSun size={20} /> : <LuMoon size={20} />}
