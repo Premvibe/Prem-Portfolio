@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const educations = [
   {
@@ -31,18 +31,27 @@ const educations = [
 
 const Education = () => {
   return (
-    <div>
+    <div className="px-4 md:px-0">
       <section className="mt-10 max-w-2xl mx-auto text-left">
         <h2 className="text-xl font-semibold mb-2">Education</h2>
         <ul className="space-y-4">
           {educations.map((edu, index) => (
-            <li key={index} className="flex justify-between items-center">
-              <div className="flex items-center gap-3">
-                <img src={edu.logo} alt={edu.school} className="w-8 h-8 rounded-full" />
+            <li key={index} className="flex justify-between items-start gap-4">
+              <div className="flex items-start gap-3">
+                <img
+                  src={edu.logo}
+                  alt={edu.school}
+                  className="w-8 h-8 rounded-full object-cover"
+                />
                 <div>
                   <div className="font-medium">
                     {edu.url ? (
-                      <a href={edu.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      <a
+                        href={edu.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
                         {edu.school}
                       </a>
                     ) : (
@@ -52,13 +61,13 @@ const Education = () => {
                   <div className="text-sm text-gray-500">{edu.program}</div>
                 </div>
               </div>
-              <span className="text-sm text-gray-400">{edu.duration}</span>
+              <span className="text-sm text-gray-400 whitespace-nowrap">{edu.duration}</span>
             </li>
           ))}
         </ul>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
